@@ -1,0 +1,43 @@
+name: django.yml
+on:
+  push: ["main"]
+  pull_request: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.11, 3.12]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Django System Checks
+      run: |
+        python manage.py check
+
+    - name: Check for Missing Migrations
+      run: |
+        python manage.py makemigrations --check --dry-run
+
+    - name: Run Tests
+      run: |
+        python manage.py test
+
+    # 3. Flow checking the linter (DISABLED)
+    # To enable, uncomment the lines below and ensure 'flake8' is in requirements.txt
+    # - name: Run Linter (Flake8)
+    #   run: |
+    #     flake8 .
