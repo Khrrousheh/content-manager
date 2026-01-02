@@ -15,7 +15,7 @@ A professional, Django-based backend engine and site manager designed to power h
 * **Asynchronous Tasks & Caching:** [Redis](https://redis.io/)
 * **Continuous Integration (CI):** [GitHub Actions](https://github.com/features/actions)
 * **Continuous Deployment (CD):** [Google Cloud Platform (GCP)](https://cloud.google.com/)
-* **Database:** PostgreSQL (Recommended)
+* **Database:** Postgresql (Recommended)
 
 ---
 
@@ -31,12 +31,12 @@ A professional, Django-based backend engine and site manager designed to power h
 
 ## 🗓 2026 Roadmap
 
-| Timeline | Milestone | Deliverables |
-| :--- | :--- | :--- |
-| **Q1 2026** | **Core Foundation** | Development of the Portfolio engine and Contact-to-Email module. |
-| **Q2 2026** | **Dynamic CVs** | Implementation of Programmable Resumes with project-based filtering. |
-| **Q3 2026** | **Digital Footprint** | Blog system, Timeline management, and initial AI integration. |
-| **Q4 2026** | **Client Ecosystem** | Launch of Verint clients as native Web and Mobile applications. |
+| Timeline    | Milestone             | Deliverables                                                         |
+|:------------|:----------------------|:---------------------------------------------------------------------|
+| **Q1 2026** | **Core Foundation**   | Development of the Portfolio engine and Contact-to-Email module.     |
+| **Q2 2026** | **Dynamic CVs**       | Implementation of Programmable Resumes with project-based filtering. |
+| **Q3 2026** | **Digital Footprint** | Blog system, Timeline management, and initial AI integration.        |
+| **Q4 2026** | **Client Ecosystem**  | Launch of variant clients as native Web and Mobile applications.     |
 
 ---
 
