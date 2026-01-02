@@ -53,7 +53,7 @@ This project is built for scale and reliability using a modern CI/CD pipeline:
 ## 🚀 Getting Started
 
 ### Prerequisites
-* Python 3.10+
+* Python 3.12+
 * Docker & Docker Compose
 * GCP Service Account (for deployment)
 
