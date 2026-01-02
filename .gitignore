@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django specific
+db.sqlite3
+db.sqlite3-journal
+media/
+static/
+staticfiles/
+local_settings.py
+
+# Redis
+dump.rdb
+appendonly.aof
+*.redis
+
+# Google Cloud Platform (GCP)
+# Ignore service account keys and gcloud configs
+*-credentials.json
+.gcloud/
+.google-cloud-auth/
+credentials.json
+
+# GitHub Actions / Workflows
+# (Usually you commit the yaml files, but ignore local act or runner files)
+.act/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs/Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+# Add any generated resume PDFs or exported CSVs here
+/exports/
